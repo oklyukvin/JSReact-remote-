@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles, withStyles } from "@material-ui/core/styles";
 import Button from "@material-ui/core/Button";
 import { Link } from "react-router-dom";
+import { purple } from '@material-ui/core/colors';
 
 const useStyles = makeStyles((theme) => ({
     chatButton: {
@@ -49,7 +50,7 @@ const ChatList = () => {
                     </ListItem>
                 ))}
             </List>
-        </div>
+        </div >
     );
 };
 
